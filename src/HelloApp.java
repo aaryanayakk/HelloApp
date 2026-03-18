@@ -2,10 +2,14 @@ public class HelloApp {
 
     public static void main(String[] args) {
 
-        String[] names = {"Aaryan", "Rahul", "Sam"};
+        if (args.length == 0) {
+            System.out.println("Hello World");
+        } else {
 
-        for (String name : names) {
-            System.out.println("Hello " + name);
+            for (String name : args) {
+                System.out.println("Hello " + name);
+            }
+
         }
 
     }
